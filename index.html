@@ -34,6 +34,7 @@
 
         nav {
             margin: 20px 0;
+            position: relative; /* Position relative for dropdown */
         }
 
         nav a {
@@ -49,6 +50,39 @@
 
         nav a:hover {
             background-color: #055A8C;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            padding: 10px 0;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block; /* Show the dropdown on hover */
         }
 
         section {
@@ -122,14 +156,19 @@
     <header>
         <h1>Dándole vida a nuestro gigante seco</h1>
         <nav>
-            <a href="#mapa">El problema</a>
-            <a href="#objetivos">Objetivos</a>
-            <a href="#antecedentes">Antecedentes</a>
-            <a href="#contexto">Contexto</a>
-            <a href="#caracteristicas">Características</a>
-            <a href="#propuesta">Propuesta</a>
-            <a href="#conclusion">Conclusión</a>
-            <a href="#videos">Videos</a>
+            <div class="dropdown">
+                <a href="#">Menú</a>
+                <div class="dropdown-content">
+                    <a href="#mapa">El problema</a>
+                    <a href="#objetivos">Objetivos</a>
+                    <a href="#antecedentes">Antecedentes</a>
+                    <a href="#contexto">Contexto</a>
+                    <a href="#caracteristicas">Características</a>
+                    <a href="#propuesta">Propuesta</a>
+                    <a href="#conclusion">Conclusión</a>
+                    <a href="#videos">Videos</a>
+                </div>
+            </div>
         </nav>
     </header>
 
