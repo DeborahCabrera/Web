@@ -22,9 +22,6 @@
             padding: 20px 0;
             text-align: center;
             border-bottom: 4px solid #0A74A6;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         header h1 {
@@ -45,6 +42,7 @@
             margin: 0 10px;
             border-radius: 5px;
             font-weight: bold;
+            margin: 5px;
             transition: background-color 0.3s ease;
         }
 
@@ -148,6 +146,14 @@
                 max-width: 100%;
             }
         }
+        .div-nav{
+            top: 0;
+            position: sticky;
+            z-index: 1000;
+            background-color: rgba(46, 139, 192, 0.8); /* Make background semi-transparent to match header */
+            padding: 10px 0; /* Add some padding for better aesthetics */
+
+        }
     </style>
 </head>
 
@@ -155,6 +161,9 @@
 
     <header>
         <h1>Dándole vida a nuestro gigante seco</h1>
+        
+    </header>
+    <div id="div-nav">
         <nav>
             <div class="dropdown">
                 <a href="#">Menú</a>
@@ -170,8 +179,7 @@
                 </div>
             </div>
         </nav>
-    </header>
-
+    </div>
     <section id="mapa">
         <div class="card">
             <h1>El problema</h1>
