@@ -65,6 +65,7 @@
             max-width: 800px;
             text-align: center;
             margin-bottom: 20px;
+            width: 90%; /* Responsive width */
         }
 
         .card h1 {
@@ -92,6 +93,7 @@
 
         iframe {
             width: 100%;
+            height: auto; /* Adjust height for responsiveness */
             border-radius: 10px;
             margin-bottom: 20px;
         }
@@ -109,9 +111,41 @@
             font-size: 1.2em;
         }
 
-        @media (min-width: 768px) {
-            .card img {
-                max-width: 100%;
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* Smaller header font on mobile */
+            }
+
+            nav a {
+                padding: 8px 12px; /* Smaller padding for navigation */
+                font-size: 0.9em; /* Smaller font size for links */
+            }
+
+            .card h1 {
+                font-size: 1.8em; /* Smaller card title on mobile */
+            }
+
+            .card h4 {
+                font-size: 1em; /* Smaller text in card on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* Further reduce header size for very small screens */
+            }
+
+            nav a {
+                padding: 5px 10px; /* Reduce padding for very small screens */
+                font-size: 0.8em; /* Further reduce link size */
+            }
+
+            .card {
+                padding: 15px; /* Less padding in cards for mobile */
+            }
+
+            footer p {
+                font-size: 1em; /* Smaller footer text */
             }
         }
     </style>
@@ -184,29 +218,24 @@
     <section id="propuesta">
         <div class="card">
             <h1>Propuesta</h1>
-            <img src="img/explorando_sarigua.jpg" alt="Propuesta Sarigua">
-            <h4>1. Reuniones con moradores, ONG y autoridades para potenciar la zona. <br>
-                2. Fomentar el turismo para crear conciencia sobre la preservación del parque. <br>
-                3. Giras educativas con universidades para promover proyectos de recuperación. <br>
-                4. Crear alianzas con empresas para mejorar el entorno. <br>
-                5. Apoyar futuras investigaciones para la recuperación del suelo y vegetación de Sarigua.
-            </h4>
+            <img src="img/propuesta.jpg" alt="Propuesta Sarigua">
+            <h4>Proponemos un programa de reforestación en áreas críticas del parque, utilizando especies nativas que han demostrado resistencia a la salinidad. Implementaremos técnicas de conservación de suelo y agua, y realizaremos talleres educativos para sensibilizar a la comunidad sobre la importancia de proteger este ecosistema. También se creará un monitoreo a largo plazo para evaluar la recuperación de las áreas intervenidas.</h4>
         </div>
     </section>
 
     <section id="conclusion">
         <div class="card">
             <h1>Conclusión</h1>
-            <img src="img/desierto-sarigua-panama.jpg" alt="Conclusión Sarigua">
-            <h4>Para concluir este proyecto y con la idea de darle vida a nuestro gigante seco, debemos realizar esfuerzos coordinados entre todos los actores involucrados. La educación, la concienciación, y el trabajo conjunto son claves para recuperar y preservar el Parque Nacional Sarigua y fomentar un turismo responsable.</h4>
+            <img src="img/conclusion.jpg" alt="Conclusión Sarigua">
+            <h4>La recuperación del Parque Nacional Sarigua es un desafío que requiere el esfuerzo conjunto de la comunidad y las instituciones. Este proyecto busca resaltar la importancia de la biodiversidad y promover prácticas sostenibles. La historia de Sarigua nos enseña que, aunque el suelo se ha degradado, la posibilidad de restaurarlo aún existe.</h4>
         </div>
     </section>
 
     <section id="videos">
         <div class="card">
-            <h1>Videos</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cwvtWWrmKV4?si=L7zcR3agYZLye1fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mpG1fXdvfto?si=O8ZH0dnScehsAO2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1>Videos sobre el Parque</h1>
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
