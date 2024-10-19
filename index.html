@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parque Nacional Sarigua</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -22,6 +23,14 @@
             padding: 20px 0;
             text-align: center;
             border-bottom: 4px solid #0A74A6;
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        header img {
+            width: 80px; /* Adjust logo size */
+            margin-right: 20px; /* Space between logo and text */
         }
 
         header h1 {
@@ -146,13 +155,13 @@
                 max-width: 100%;
             }
         }
-        .div-nav{
-            top: 0;
-            position: sticky;
-            z-index: 1000;
-            background-color: rgba(46, 139, 192, 0.8); /* Make background semi-transparent to match header */
-            padding: 10px 0; /* Add some padding for better aesthetics */
 
+        .div-nav {
+            position: sticky; /* Cambia a sticky */
+            top: 0; /* Fija el elemento a la parte superior */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            background-color: rgba(46, 139, 192, 0.8); /* Fondo semi-transparente */
+            padding: 10px 0; /* Espaciado */
         }
     </style>
 </head>
@@ -160,8 +169,8 @@
 <body>
 
     <header>
+        <img src="img/logo.jpg" alt="Logo">
         <h1>Dándole vida a nuestro gigante seco</h1>
-        
     </header>
     <div id="div-nav">
         <nav>
@@ -245,7 +254,17 @@
         <div class="card">
             <h1>Conclusión</h1>
             <img src="img/desierto-sarigua-panama.jpg" alt="Conclusión Sarigua">
-            <h4>Para concluir este proyecto y con la idea de darle vida a nuestro gigante seco, debemos realizar esfuerzos coordinados entre todos los actores involucrados. La educación, la concienciación, y el trabajo conjunto son claves para recuperar y preservar el Parque Nacional Sarigua y fomentar un turismo responsable.</h4>
+            <h4>Para concluir este proyecto y con la idea de darle continuidad o al menos avanzar en su desarrollo, se presentan las siguientes conclusiones y recomendaciones obtenidas a lo largo del proceso, destacando los beneficios de materializarlo o llevarlo a cabo.
+
+                El Parque Nacional Sarigua ha sido percibido como un desierto, y esta clasificación ha frenado el desarrollo de proyectos de mejora y la promoción del turismo, que podría potenciar la zona.
+                
+                La regeneración natural observada en áreas cercanas a las tinas de camarones sugiere que el suelo del parque es recuperable. La vegetación ha crecido espontáneamente sin intervención humana, gracias a la germinación natural impulsada por los animales de la zona.
+                
+                El Ministerio de Ambiente debería implementar un Plan Maestro de reforestación en el Parque Nacional Sarigua, contando con la participación de la comunidad, colegios, universidades, organizaciones de protección ambiental, y ONG tanto nacionales como internacionales.
+                
+                En el proceso de reforestación, es fundamental observar y aprovechar las especies nativas que ya han proliferado en el área.
+                
+                Es importante concienciarnos de que el turismo puede generar actividades complementarias que impulsen la economía local y provean fondos para financiar los programas de reforestación.</h4>
         </div>
     </section>
 
